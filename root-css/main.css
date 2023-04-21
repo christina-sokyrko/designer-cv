@@ -65,7 +65,7 @@ body {
 .image {
   width: 42%;
   height: 100%;
-  background: url("../images/v70_701.png");
+  background: url("../root-images/v70_701.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -89,7 +89,7 @@ width: 100%;
 text-align: left;
 }
 .row {
-  color: url("../images/v70_705.png");
+  color: url("../root.images/v70_705.png");
   font-family: Montserrat;
   font-weight: Medium;
   font-size: 64px;
@@ -219,7 +219,7 @@ text-align: left;
     opacity: 15%;
   }
   .content {
-    background: url("../images/cover-img.jpg");
+    background: url("../root.images/cover-img.jpg");
     background-repeat: no-repeat;
 background-position: center center;
 background-attachment: fixed;
