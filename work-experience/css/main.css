@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+
+
+}
+.main-container {
+  width: 100%;
+  min-height: 150vh;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+  z-index: 50;
+}
+.header-body {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 30%;
+}
+.header-burger {
+  display: none;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  background: url("../images/work-experience-img.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  overflow: hidden;
+}
+.nav-link {
+  width: 250px;
+  color: rgba(0,0,0,1);
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align:center;
+  text-decoration: none;
+  position: relative;
+  top: 30%;
+}
+.nav-link:hover {
+  opacity: 40%;
+}
+.home-link-responsive {
+  display: none;
+}
+
+.home-link {
+  position: relative;
+  left: 5%;
+  color: rgba(22, 112, 0, 1);
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 24px;
+  opacity: 1;
+  text-decoration: none;
+  position: relative;
+  top: 5%;
+}
+.link-block {
+  position:relative;
+  width: 130px;
+  height: 50px;
+  background-color: rgba(255,255,255, 0.7);
+  text-align: center;
+  padding-top: 0.4%;
+  opacity: 50%;
+}
+.home-link:hover {
+  color: rgba(22, 112, 0, 1);
+}
+.link-block:hover {
+  background-color: white;
+}
+.arrow {
+  position: relative;
+  top:3px;
+}
+.title {
+  width: 60px;
+  color: rgba(133,32,0,1);
+  position: relative;
+  top: 13vh;
+  left: 35vw;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 5px;
+  opacity: 1;
+  text-align: left;
+}
+.info-block {
+  width: 750px;
+  height:1150px;
+  background-color: rgba(255,255,255, 0.6);
+  position: relative;
+  top: 0;
+  left: 50vw;
+}
+.info-text {
+  position: relative;
+  top: 3%;
+  width: calc(100%-15px);
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.row {
+ height: 180px;
+
+}
+.info-item {
+  width:320px;
+  color: black;
+  opacity: 100%;
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  text-align: left;
+   vertical-align: top;
+  }
+  @media screen and (max-width: 768px) {
+    .header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .header-body {
+      display: none;
+    }
+    .header-body.active {
+      position: fixed;
+      top:10%;
+      left:0;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 300px;
+      height: 600px;
+    }
+    .home-link-responsive {
+      display: block;
+
+    }
+    .nav-link {
+      top: 0;
+    }
+    .header-burger {
+      display:block;
+      position: relative;
+      width: 50px;
+      height: 30px;
+      top: 30px;
+    }
+    .header-burger span {
+      position: absolute;
+      background-color: black;
+      opacity: 30%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 14px;
+    }
+    .header-burger:before,
+    .header-burger:after {
+      content: '';
+      position: absolute;
+      background: black;
+      opacity: 30%;
+      width: 100%;
+      height: 2px;
+      left: 0;
+    }
+    .header-burger:before {
+      top: 0;
+    }
+    .header-burger:after {
+      bottom: 0;
+    }
+    .header-burger.active span {
+      transform: scale(0);
+    }
+    .header-burger.active:before {
+      transform: rotate(45deg);
+      top: 13.5px;
+      opacity: 15%;
+    }
+    .header-burger.active:after {
+      transform: rotate(-45deg);
+      bottom: 13.5px;
+      opacity: 15%;
+    }
+    .content {
+      background: url("../images/wallpaper.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .home-link {
+      display: none;
+    }
+    .home-link-responsive {
+      position: relative;
+      top: 25px;
+      left: 0;
+      color: rgba(22, 112, 0, 1);
+      font-family: Open Sans;
+      font-size: 24px;
+      opacity: 1;
+      text-decoration: none;
+      position: relative;
+    }
+    .arrow-resp {
+      position: relative;
+      top: 3px;
+    }
+    .info-block {
+      width: 100vw;
+      min-height: 100vh;
+      position: absolute;
+      left: 0;
+      top: 12%;
+      background: rgba(255,255,255, 0.3);
+      min-height: 70%;
+
+    }
+    .info-text {
+      width: calc(100%-25px);
+      
+    }
+    .info-item {
+      font-size: 14px;
+      width: 40vw;
+    }
+    .title {
+      color: rgba(133,32,0,1);
+      position: absolute;
+      top: 7vh;
+      width: 100%;
+      left: 0;
+      text-align:center;
+    }
+
+  }

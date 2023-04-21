@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+   overflow-y: hidden;
+}
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+  z-index: 50;
+}
+.gap {
+  display: none;
+}
+.header-body {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 30%;
+}
+.header-burger {
+  display: none;
+}
+.nav-link {
+  width: 250px;
+  color: rgba(0,0,0,1);
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align:center;
+  text-decoration: none;
+  position: relative;
+  top: 30%;
+}
+.nav-link:hover {
+  opacity: 40%;
+}
+.content{
+  min-height: 100vh;
+  min-width: 100vh;
+  background: linear-gradient(rgba(182,226,156,0.46000000834465027), rgba(156,226,163,0));
+  opacity: 1;
+  position: relative;
+
+  left: 0px;
+  overflow: hidden;
+}
+
+.image {
+  width: 42%;
+  height: 100%;
+  background: url("../images/v70_701.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  left: 0px;
+  overflow: hidden;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+  left: 42%;
+  width: 700px;
+}
+
+.title {
+position: relative;
+width: 100%;
+text-align: left;
+}
+.row {
+  color: url("../images/v70_705.png");
+  font-family: Montserrat;
+  font-weight: Medium;
+  font-size: 64px;
+  opacity: 1;
+}
+
+#hello {
+ animation-name:appear;
+ animation-duration: 1s;
+ animation-timing-function: linear;
+ }
+ @keyframes appear {
+  0% {
+     visibility:hidden;
+   }
+   100% {
+     visibility:visible;
+   }
+ }
+#name {
+  position: relative;
+  left: 10%;
+}
+#designer {
+  position: relative;
+  left: 25%;
+}
+.email {
+  border: none;
+  width: 257px;
+  height: 49px;
+  background: rgba(121,29,0,1);
+  opacity: 1;
+  overflow: hidden;
+  color: rgba(255,255,255,1);
+  font-family: Open Sans;
+  font-weight: SemiBold;
+  font-size: 20px;
+  position: relative;
+  left: 25%;
+  margin-bottom: 10%;
+}
+.email:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+.icons {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 35%;
+
+}
+.icon:hover {
+  opacity: 75%;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .gap {
+    display: block;
+    visibility: hidden;
+  }
+  .header-body {
+    display: none;
+  }
+  .header-body.active {
+    position: fixed;
+    top:10%;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    height: 600px;
+  }
+
+  .nav-link {
+    top: 0;
+  }
+  .header-burger {
+    display:block;
+    position: relative;
+    width: 50px;
+    height: 30px;
+    top: 30px;
+  }
+  .header-burger span {
+    position: absolute;
+    background-color: black;
+    opacity: 30%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 14px;
+  }
+  .header-burger:before,
+  .header-burger:after {
+    content: '';
+    position: absolute;
+    background: black;
+    opacity: 30%;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header-burger:before {
+    top: 0;
+  }
+  .header-burger:after {
+    bottom: 0;
+  }
+  .header-burger.active span {
+    transform: scale(0);
+  }
+  .header-burger.active:before {
+    transform: rotate(45deg);
+    top: 13.5px;
+    opacity: 15%;
+  }
+  .header-burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 13.5px;
+    opacity: 15%;
+  }
+  .content {
+    background: url("../images/cover-img.jpg");
+    background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+    max-width: 100vh;
+    margin: 3px auto 0;
+
+  }
+  .image {
+    display: none;
+  }
+  .text {
+    position:relative;
+    background:rgba(255,255,255, 0.3);
+    width: 100vw;
+    height: 60%;
+    left:0;
+    bottom: 0;
+    top:32vh;
+    text-align: center;
+
+  }
+  .title {
+    width: 100%;
+    left:0;
+    bottom: 0;
+    text-align: center;
+
+  }
+  .row {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    opacity: 100%;
+
+  }
+  #name {
+    position: relative;
+    left:auto;
+    z-index: 10 !important;
+  }
+  #designer {
+    position: relative;
+    left:auto;
+    z-index: 10;
+  }
+  .email {
+    color: white;
+    width: 90%;
+    font-size: 20px;
+    position: relative;
+    left: 0;
+    opacity: 100%;
+
+  }
+  .icons {
+    position: relative;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30%;
+
+  }
+}
