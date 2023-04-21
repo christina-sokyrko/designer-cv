@@ -32,6 +32,7 @@ body {
   justify-content: space-around;
   position: relative;
   top: 30%;
+
 }
 .header-burger {
   display: none;
@@ -89,18 +90,14 @@ width: 100%;
 text-align: left;
 }
 .row {
-  color: url("../root.images/v70_705.png");
+  color: url("../root-images/v70_705.png");
   font-family: Montserrat;
   font-weight: Medium;
   font-size: 64px;
   opacity: 1;
 }
 
-#hello {
- animation-name:appear;
- animation-duration: 1s;
- animation-timing-function: linear;
- }
+
  @keyframes appear {
   0% {
      visibility:hidden;
@@ -109,6 +106,11 @@ text-align: left;
      visibility:visible;
    }
  }
+ #hello {
+  animation-name:appear;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  }
 #name {
   position: relative;
   left: 10%;
@@ -162,12 +164,13 @@ text-align: left;
   .header-body.active {
     position: fixed;
     top:10%;
-    left:0;
+    right: 0;
     display: flex;
     flex-direction: column;
     background-color: white;
     width: 300px;
     height: 600px;
+
   }
 
   .nav-link {
@@ -219,12 +222,12 @@ text-align: left;
     opacity: 15%;
   }
   .content {
-    background: url("../root.images/cover-img.jpg");
+    background: url("../root-images/cover-img.jpg");
     background-repeat: no-repeat;
 background-position: center center;
 background-attachment: fixed;
 background-size: cover;
-    max-width: 100vh;
+    max-width: 85vh;
     margin: 3px auto 0;
 
   }
@@ -243,7 +246,7 @@ background-size: cover;
 
   }
   .title {
-    width: 100%;
+    width: 100vw;
     left:0;
     bottom: 0;
     text-align: center;
@@ -268,10 +271,11 @@ background-size: cover;
   }
   .email {
     color: white;
-    width: 90%;
+    width: 90vw;
     font-size: 20px;
     position: relative;
     left: 0;
+
     opacity: 100%;
 
   }

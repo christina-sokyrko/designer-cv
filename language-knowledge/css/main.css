@@ -148,7 +148,7 @@ body {
     .header-body.active {
       position: fixed;
       top:10%;
-      left:0;
+      right: 0;
       display: flex;
       flex-direction: column;
       background-color: white;
