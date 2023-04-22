@@ -141,6 +141,7 @@ body {
 
   @media screen and (max-width: 768px) {
     .header {
+      height: 60px;
       display: flex;
       justify-content: space-between;
     }
@@ -149,7 +150,7 @@ body {
     }
     .header-body.active {
       position: fixed;
-      top:10%;
+      top:6%;
       right: 0;
       display: flex;
       flex-direction: column;
@@ -184,7 +185,7 @@ body {
       position: relative;
       width: 50px;
       height: 30px;
-      top: 30px;
+      top: 18px;
     }
 
     .header-burger span {
@@ -254,8 +255,8 @@ body {
       min-height: 100vh;
       position: absolute;
       left: 0;
-      top: 25%;
-      background: rgba(255,255,255, 0.3);
+      top: 20%;
+      background: linear-gradient(65deg, rgba(255,255,255, 0.9), rgba(255,255,255, 0.0)) ;
       height: 70%;
     }
     .info-item {

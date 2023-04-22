@@ -59,7 +59,7 @@ body {
 .content{
  min-height: 100vh;
  min-width: 100vh;
-  background: url("../images/basic-info-img.png");
+  background: url("../images/basic-info-img.jpg");
   background-repeat: no-repeat;
   background-size:cover;
   opacity: 1;
@@ -151,6 +151,7 @@ body {
   }
   @media screen and (max-width: 768px) {
     .header {
+      height: 60px;
       display: flex;
       justify-content: space-between;
     }
@@ -159,7 +160,7 @@ body {
     }
     .header-body.active {
       position: fixed;
-      top:10%;
+      top:8%;
       right: 0;
       display: flex;
       flex-direction: column;
@@ -192,7 +193,7 @@ body {
       position: relative;
       width: 50px;
       height: 30px;
-      top: 30px;
+      top: 18px;
     }
     .header-burger span {
       position: absolute;
@@ -264,8 +265,8 @@ body {
       min-height: 100vh;
       position: absolute;
       left: 0;
-      top: 10%;
-      background: rgba(255,255,255, 0.3);
+      top: 15%;
+      background: linear-gradient(65deg, rgba(255,255,255, 0.9), rgba(255,255,255, 0.0)) ;
       height: 70%;
     }
     .info-item {
@@ -274,7 +275,7 @@ body {
     .title {
       color: rgba(133,32,0,1);
       position: absolute;
-      top: 2vh;
+      top: 7vh;
       width: 100vw;
       left: 0;
       text-align: center;
