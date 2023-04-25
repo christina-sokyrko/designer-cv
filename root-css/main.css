@@ -103,17 +103,10 @@ text-align: left;
 }
 
 
-@keyframes appear {
- from {
-   visibility: hidden;
- }
 
- to {
-   visibility: visible;
- }
-}
  #hello {
-  animation: appear 1s;
+  animation-name: example;
+  animation-duration: 1s;
   }
 #name {
   position: relative;
@@ -122,6 +115,10 @@ text-align: left;
 #designer {
   position: relative;
   left: 25%;
+}
+@keyframes example {
+  from {visibility: hidden;}
+  to {visibility: visible;}
 }
 .email {
   border: none;
