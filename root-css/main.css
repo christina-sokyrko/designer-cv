@@ -59,7 +59,7 @@ body {
 .content{
   min-height: 100vh;
   min-width: 100vh;
-  background: url("../root-images/main-screen-background.jpg");
+  background: url("../root-images/background-desktop.jpg");
   background-size: cover;
   opacity: 1;
   position: relative;
@@ -103,18 +103,17 @@ text-align: left;
 }
 
 
- @keyframes appear {
-  0% {
-     visibility:hidden;
-   }
-   100% {
-     visibility:visible;
-   }
+@keyframes appear {
+ from {
+   visibility: hidden;
  }
+
+ to {
+   visibility: visible;
+ }
+}
  #hello {
-  animation-name:appear;
-  animation-duration: 1s;
-  animation-timing-function: linear;
+  animation: appear 1s;
   }
 #name {
   position: relative;

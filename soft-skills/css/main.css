@@ -70,7 +70,8 @@ body {
 
 .home-link {
   position: relative;
-  left: 5%;
+  top: 15px;
+  left: 0;
   color: rgba(22, 112, 0, 1);
   font-family: Open Sans;
   font-weight: bold;
@@ -82,11 +83,14 @@ body {
 }
 .link-block {
   position:relative;
-  width: 130px;
+  top: 0;
+  left: 0;
+  width: 280px;
   height: 50px;
-  background-color: rgba(255,255,255, 0.7);
-  text-align: center;
+  background: linear-gradient(100deg, rgba(255,255,255, 1), rgba(255,255,255, 0.0));
+  text-align: right;
   padding-top: 0.4%;
+  padding-right: 4%;
   opacity: 50%;
 }
 .home-link:hover {
@@ -113,15 +117,15 @@ body {
 }
 .info-block {
   width: 484px;
-  height: 412px;
+  height: 100vh;
   background-color: rgba(255,255,255, 0.6);
-  position: relative;
-  top: 5vh;
+  position: absolute;
+  top: 0;
   left: 50vw;
 }
 .info-text {
   position: relative;
-  top: 10%;
+  top: 19%;
   width: calc(100%-15px);
   margin-left: auto;
   margin-right: auto;
@@ -149,12 +153,13 @@ body {
     }
     .header-body.active {
       position: fixed;
-      top: 6%;
+      top:9%;
       right: 0;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       background-color: white;
+      box-shadow: 5px 5px 5px 5px;
       width: 300px;
       height: 900px;
       padding-left: 10px;
@@ -223,7 +228,7 @@ body {
       opacity: 15%;
     }
     .content {
-      top:60px;
+      top:70px;
       background: url("../images/wallpaper.jpg");
       background-size: cover;
       background-position: center;
@@ -254,7 +259,7 @@ body {
       position: absolute;
       left: 0;
       top: 15%;
-      background: linear-gradient(65deg, rgba(255,255,255, 0.9), rgba(255,255,255, 0.0)) ;
+      background: linear-gradient(85deg, rgba(255,255,255, 1), rgba(255,255,255, 0.0)) ;
       height: 70%;
     }
     .info-text {
