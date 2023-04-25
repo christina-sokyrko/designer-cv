@@ -146,7 +146,7 @@ body {
   }
   @media screen and (max-width: 768px) {
     .main-container {
-      overflow: visible;
+      min-height: 140vh;
     }
     .header {
       height: 60px;
